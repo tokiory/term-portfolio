@@ -14,13 +14,14 @@
 
 <script setup lang="ts">
 import CommandWrapper from "@/components/Command/CommandWrapper.vue";
+import { TELEGRAM_LINK } from "@/data/personal";
 import { Icon } from "@iconify/vue";
 import { onMounted } from "vue";
 
 onMounted(() => {
   const link = document.createElement("a");
   link.target = "_blank";
-  link.href = "https://t.me/tokiory";
+  link.href = TELEGRAM_LINK;
   link.click();
 });
 </script>

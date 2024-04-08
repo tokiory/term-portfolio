@@ -1,19 +1,16 @@
+import { GITHUB_LINK, TELEGRAM_LINK } from "./personal";
+
 export const contacts = [
   {
     name: "github",
-    url: "https://github.com/tokiory",
+    url: GITHUB_LINK,
     icon: "pixelarticons:code",
   },
   {
     name: "telegram",
-    url: "https://t.me/tokiory",
+    url: TELEGRAM_LINK,
     icon: "pixelarticons:human-run",
   },
-  // {
-  //   name: "public",
-  //   url: "https://t.me/developer_log",
-  //   icon: "pixelarticons:teach",
-  // },
   {
     name: "twitch",
     url: "https://twitch.tv/tokiory",

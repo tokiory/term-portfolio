@@ -3,7 +3,8 @@
     <PortraitAscii />
     <div class="command-about__description">
       <div class="command-about__name">
-        Hi! My name is <span class="command-about__highlight">tokiory</span>
+        Hi! My name is
+        <span class="command-about__highlight">{{ NICKNAME }}</span>
       </div>
       <div class="command-about__job">
         <span class="command-about__keyword">Job</span>: I am a front-end
@@ -39,6 +40,7 @@
 </template>
 
 <script setup lang="ts">
+import { NICKNAME } from "@/data/personal";
 import CommandWrapper from "./CommandWrapper.vue";
 import PortraitAscii from "@/components/Ascii/AsciiPortrait.vue";
 </script>

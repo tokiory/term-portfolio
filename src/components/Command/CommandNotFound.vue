@@ -2,7 +2,7 @@
   <CommandWrapper class="command-not-found">
     <div>
       No such command:
-      <span class="command-not-found__error">{{command}}</span>
+      <span class="command-not-found__error">{{ command }}</span>
     </div>
   </CommandWrapper>
 </template>
