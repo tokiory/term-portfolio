@@ -1,0 +1,24 @@
+@import "./theme";
+@import './scrollbar';
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+*::selection {
+ background-color: var(--theme-selection);
+}
+
+@font-face {
+  font-family: 'Pro Font';
+  src: url('/ProFontWindows.ttf') format('truetype');
+}
+
+a {
+  color: var(--theme-link);
+}
+
+body {
+  background-color: var(--theme-background);
+  color: var(--theme-foreground);
+}
