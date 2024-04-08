@@ -13,7 +13,10 @@
 </template>
 
 <script lang="ts" setup>
+import { useSleep } from "@/composables/useSleep";
 import CommandWrapper from "./CommandWrapper.vue";
+
+const { isSleeping } = useSleep();
 
 const availableCommands = [
   {
@@ -44,7 +47,14 @@ const availableCommands = [
     name: "clear",
     description: "Clear the terminal",
   },
-] as const;
+];
+
+if (!isSleeping) {
+  availableCommands.push({
+    name: "history",
+    description: "Show history",
+  });
+}
 </script>
 <style lang="scss" scoped>
 .command-help {

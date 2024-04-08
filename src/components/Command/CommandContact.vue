@@ -26,12 +26,12 @@ import { contacts } from "@/data/contacts.ts";
   width: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 1ch;
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2ch;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px 16px;
   }
 
   &__item {
