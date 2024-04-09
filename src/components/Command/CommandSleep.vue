@@ -31,5 +31,6 @@ const sleepPhrase = computed(() => {
 <style lang="scss" scoped>
 .command-sleep {
   font-size: 24px;
+  color: var(--theme-error);
 }
 </style>
